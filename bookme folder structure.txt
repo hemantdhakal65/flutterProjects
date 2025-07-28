@@ -1,0 +1,167 @@
+lib/
+├── auth/
+│   ├── screens/
+│   │   ├── auth_gate_screen.dart       
+│   │   ├── email_login_screen.dart      
+│   │   ├── forgot_password_screen.dart
+│   │   ├── login_screen.dart            
+│   │   ├── otp_verification_screen.dart 
+│   │   ├── phone_login_screen.dart      
+│   │   ├── reset_password_screen.dart
+│   │   ├── signup_screen.dart           
+│   │   └── user_reason_screen.dart
+│   ├── widgets/
+│   │   ├── auth_option_card.dart
+│   │   ├── custom_text_input.dart
+│   │   ├── date_picker_field.dart
+│   │   ├── otp_input_field.dart
+│   │   ├── password_input_field.dart
+│   │   └── reason_selection_card.dart
+│   ├── services/
+│   │   ├── auth_service.dart
+│   │   └── user_repository.dart
+│   ├── models/
+│   │   ├── auth_method.dart
+│   │   └── user_model.dart
+│   └── utils/
+│       ├── auth_constants.dart
+│       ├── auth_validators.dart
+│       └── responsive_auth_ui.dart
+│
+├── core/
+│   ├── routes/
+│   │   ├── app_router.dart              
+│   │   └── route_names.dart             
+│   ├── providers/
+│   │   └── app_providers.dart           
+│   ├── constants/
+│   │   ├── agora_constants.dart
+│   │   ├── app_colors.dart
+│   │   ├── app_strings.dart
+│   │   └── firestore_constants.dart
+│   ├── errors/
+│   │   └── exceptions.dart
+│   ├── utils/
+│   │   ├── file_utils.dart
+│   │   ├── media_utils.dart
+│   │   └── time_utils.dart
+│   ├── widgets/
+│   │   ├── custom_app_bar.dart
+│   │   ├── message_bubble.dart
+│   │   └── typing_indicator.dart
+│   └── screens/
+│       └── splash_screen.dart           
+│
+├── features/
+│   ├── category/
+│   │   ├── components/
+│   │   │   ├── category_card.dart
+│   │   │   ├── category_filter_chip.dart
+│   │   │   ├── category_grid.dart
+│   │   │   ├── category_search_bar.dart
+│   │   │   ├── category_user_card.dart
+│   │   │   └── distance_slider.dart
+│   │   ├── models/
+│   │   │   ├── category_model.dart
+│   │   │   └── user_model.dart
+│   │   ├── providers/
+│   │   │   └── category_provider.dart
+│   │   ├── screens/
+│   │   │   ├── category_results_screen.dart
+│   │   │   └── category_screen.dart
+│   │   └── services/
+│   │       └── category_service.dart
+│   │
+│   ├── chat/
+│   │   ├── data/
+│   │   │   ├── models/
+│   │   │   │   ├── chat_user.dart
+│   │   │   │   ├── conversation.dart
+│   │   │   │   └── message.dart
+│   │   │   └── repositories/
+│   │   │       └── chat_repository.dart
+│   │   ├── presentation/
+│   │   │   ├── providers/
+│   │   │   │   └── chat_provider.dart
+│   │   │   ├── screens/
+│   │   │   │   ├── chat_list_screen.dart
+│   │   │   │   ├── chat_screen.dart
+│   │   │   │   └── new_chat_screen.dart
+│   │   │   └── widgets/
+│   │   │       ├── attachment_menu.dart
+│   │   │       ├── chat_input.dart
+│   │   │       └── message_bubble.dart
+│   │   ├── services/
+│   │   │   ├── agora_service.dart
+│   │   │   ├── firebase_service.dart
+│   │   │   └── firebase_options.dart
+│   │   └── utils/
+│   │       └── time_utils.dart
+│   │
+│   ├── home/
+│   │   ├── components/
+│   │   │   ├── create_post_dialog.dart
+│   │   │   ├── post_card.dart
+│   │   │   ├── post_specifications.dart
+│   │   │   ├── comment_section.dart
+│   │   │   ├── reaction_button.dart
+│   │   │   └── user_search_bar.dart
+│   │   ├── models/
+│   │   │   ├── post_model.dart
+│   │   │   ├── comment_model.dart
+│   │   │   └── booking_model.dart
+│   │   ├── providers/
+│   │   │   └── home_provider.dart
+│   │   ├── screens/
+│   │   │   └── home_screen.dart
+│   │   └── services/
+│   │       └── home_service.dart
+│   │
+│   ├── livechat/
+│   │   ├── components/
+│   │   │   ├── video_call_screen.dart
+│   │   │   ├── user_matching.dart
+│   │   │   ├── call_controls.dart
+│   │   │   ├── ephemeral_chat_window.dart
+│   │   │   ├── switch_to_message_button.dart
+│   │   │   ├── booking_form.dart
+│   │   │   └── rating_system.dart
+│   │   ├── providers/
+│   │   │   └── live_chat_provider.dart
+│   │   ├── services/
+│   │   │   ├── webrtc_service.dart
+│   │   │   ├── geolocation_service.dart
+│   │   │   ├── matching_service.dart
+│   │   │   ├── signaling_service.dart
+│   │   │   ├── chat_service.dart
+│   │   │   └── booking_service.dart
+│   │   ├── screens/
+│   │   │   ├── live_chat_entry.dart
+│   │   │   └── call_ended_screen.dart
+│   │   └── utils/
+│   │       └── snapchat_formatter.dart
+│   │
+│   ├── main_nav/                    
+│   │   └── main_nav.dart            
+│   │
+│   └── profile/
+│       ├── components/
+│       │   ├── account_center_card.dart
+│       │   ├── delete_account_dialog.dart
+│       │   ├── gender_selection.dart
+│       │   ├── profile_header.dart
+│       │   ├── setting_tile.dart
+│       │   └── theme_switch_card.dart
+│       ├── providers/
+│       │   └── profile_provider.dart
+│       ├── screens/
+│       │   └── profile_screen.dart
+│       └── services/
+│           └── auth_service.dart
+│
+├── firebase/
+│   ├── firebase_config.dart
+│   ├── firestore_service.dart
+│   └── storage_service.dart
+│
+└── main.dart                         
